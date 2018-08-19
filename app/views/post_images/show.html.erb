@@ -6,7 +6,7 @@
 
           <div class="post-meta-top">
             <div class="post-image">
-              <%= attachment_image_tag @post_image, :image %>
+              <%= attachment_image_tag post_comment.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %>
             </div>
           </div>
           <div class="post-content">
